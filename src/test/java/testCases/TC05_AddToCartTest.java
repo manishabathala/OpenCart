@@ -17,8 +17,8 @@ public class TC05_AddToCartTest extends BaseClass{
 			hm.clickSearchBtn();
 			
 			SearchPage sp=new SearchPage(driver);
-			if(sp.isProductExist("iphone")) {
-				sp.selectProducts("iphone");
+			if(sp.isProductExist(p.getProperty("searchProduct"))) {
+				sp.selectProducts(p.getProperty("searchProduct"));
 				sp.setQuantity("3");
 				sp.clickAddToCart();
 			

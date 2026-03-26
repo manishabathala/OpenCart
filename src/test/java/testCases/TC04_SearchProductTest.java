@@ -16,7 +16,7 @@ public class TC04_SearchProductTest extends BaseClass{
 		hp.clickSearchBtn();
 		
 		SearchPage sPage=new SearchPage(driver);
-		Assert.assertEquals(sPage.isProductExist("MacBook"), true); 
+		Assert.assertEquals(sPage.isProductExist(p.getProperty("searchProduct")), true); 
 		
 		
 	}
