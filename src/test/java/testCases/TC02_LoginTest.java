@@ -11,18 +11,24 @@ import testBase.BaseClass;
 public class TC02_LoginTest extends BaseClass{
 	@Test(groups= {"Sanity","Master"})
 	public void test_Login() {
-		HomePage hp=new HomePage(driver);
-		hp.clickMyAccount();
-		hp.clickLogin();
+		try {
+			HomePage hp=new HomePage(driver);
+			hp.clickMyAccount();
+			hp.clickLogin();
+			
+			LoginPage lp=new LoginPage(driver);
+			lp.setEmail(prop.getProperty("email"));
+			lp.setPassword(prop.getProperty("password"));
+			lp.clickLogin();
+			
+			MyAccountPage MyAcc=new MyAccountPage(driver);
+			boolean msg=MyAcc.isMyAccountOageExist();
+			Assert.assertEquals(msg, true);
+		}
+		catch(Exception e) {
+			Assert.fail();
+		}
 		
-		LoginPage lp=new LoginPage(driver);
-		lp.setEmail(prop.getProperty("email"));
-		lp.setPassword(prop.getProperty("password"));
-		lp.clickLogin();
-		
-		MyAccountPage MyAcc=new MyAccountPage(driver);
-		boolean msg=MyAcc.isMyAccountOageExist();
-		Assert.assertEquals(msg, true);
 		
 		
 		

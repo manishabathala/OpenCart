@@ -13,7 +13,6 @@ public class SearchPage extends BasePage {
 	public SearchPage(WebDriver driver) {
 		super(driver);
 		this.driver=driver;
-//		PageFactory.initElements(driver, this);
 	}
 	
 	@FindBy(xpath="//*[@id='content']//div[3]//img") List<WebElement> searchProducts;

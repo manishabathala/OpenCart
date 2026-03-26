@@ -6,12 +6,10 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class MyAccountPage extends BasePage{
-	//WebDriver driver;
+	
 	
 	public MyAccountPage(WebDriver driver) {
 		super(driver);
-//		this.driver=driver;
-	//	PageFactory.initElements(driver, this);
 	}
 	
 	@FindBy(xpath="//h2[normalize-space()='My Account']") WebElement header;
