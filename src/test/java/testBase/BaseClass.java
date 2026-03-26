@@ -20,14 +20,14 @@ import org.testng.annotations.Parameters;
 
 public class BaseClass {
 	public static WebDriver driver;
-	public Properties p;
+	public Properties prop;
 	
 	@BeforeClass(groups= {"Sanity","Regression","Master","DataDriven"})
 	@Parameters({"os","browser"})
 	public void setUp(String os,String br) throws IOException{
-		FileInputStream file=new FileInputStream("./src/test/resources//config.properties");
-		p=new Properties();
-		p.load(file);
+		FileInputStream file=new FileInputStream(System.getProperty("user.dir")+"//src/test/resources//config.properties");
+		prop=new Properties();
+		prop.load(file);
 		
 		switch(br) {
 		case "chrome":driver=new ChromeDriver();break;
@@ -36,7 +36,7 @@ public class BaseClass {
 		}
 		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.get(p.getProperty("appurl"));
+		driver.get(prop.getProperty("appurl"));
 		driver.manage().window().maximize();
 	}
 	

@@ -37,9 +37,9 @@ public class SearchPage extends BasePage {
 		return flag;
 	}
 	
-	public void selectProducts(String Product) {
+	public void selectProducts(String product) {
 		for(WebElement prod:searchProducts) {
-			if(prod.getAttribute("title").equalsIgnoreCase(Product)) {
+			if(prod.getAttribute("title").equalsIgnoreCase(product)) {
 				prod.click();
 			}
 		}

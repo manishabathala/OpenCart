@@ -12,11 +12,11 @@ public class TC04_SearchProductTest extends BaseClass{
 	@Test
 	public void verify_ProductSearch() throws InterruptedException {
 		HomePage hp=new HomePage(driver);
-		hp.setSearch("Mac");
+		hp.setSearch(prop.getProperty("searchProduct"));
 		hp.clickSearchBtn();
 		
 		SearchPage sPage=new SearchPage(driver);
-		Assert.assertEquals(sPage.isProductExist(p.getProperty("searchProduct")), true); 
+		Assert.assertEquals(sPage.isProductExist(prop.getProperty("searchProduct")), true); 
 		
 		
 	}

@@ -1,11 +1,15 @@
 C:\selenium_workspace_project\OpenCart\src\test\java\pageObjects\AccountRegistrationPage.java
+C:\selenium_workspace_project\OpenCart\src\test\java\pageObjects\BasePage.java
 C:\selenium_workspace_project\OpenCart\src\test\java\pageObjects\HomePage.java
 C:\selenium_workspace_project\OpenCart\src\test\java\pageObjects\LoginPage.java
 C:\selenium_workspace_project\OpenCart\src\test\java\pageObjects\MyAccountPage.java
+C:\selenium_workspace_project\OpenCart\src\test\java\pageObjects\SearchPage.java
 C:\selenium_workspace_project\OpenCart\src\test\java\testBase\BaseClass.java
 C:\selenium_workspace_project\OpenCart\src\test\java\testCases\TC01_AccountRegistrationTest.java
 C:\selenium_workspace_project\OpenCart\src\test\java\testCases\TC02_LoginTest.java
 C:\selenium_workspace_project\OpenCart\src\test\java\testCases\TC03_LoginDDT.java
+C:\selenium_workspace_project\OpenCart\src\test\java\testCases\TC04_SearchProductTest.java
+C:\selenium_workspace_project\OpenCart\src\test\java\testCases\TC05_AddToCartTest.java
 C:\selenium_workspace_project\OpenCart\src\test\java\utilities\DataProviderUtility.java
 C:\selenium_workspace_project\OpenCart\src\test\java\utilities\ExcelUtility.java
 C:\selenium_workspace_project\OpenCart\src\test\java\utilities\ExtentReportUtility.java

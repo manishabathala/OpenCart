@@ -13,16 +13,18 @@ public class TC05_AddToCartTest extends BaseClass{
 	public void verify_AddToCart() {
 		try {
 			HomePage hm=new HomePage(driver);
-			hm.setSearch("iphone");
+			hm.setSearch(prop.getProperty("searchProduct"));
 			hm.clickSearchBtn();
 			
 			SearchPage sp=new SearchPage(driver);
-			if(sp.isProductExist(p.getProperty("searchProduct"))) {
-				sp.selectProducts(p.getProperty("searchProduct"));
+			
+			if(sp.isProductExist(prop.getProperty("searchProduct"))) {
+				sp.selectProducts(prop.getProperty("searchProduct"));
 				sp.setQuantity("3");
 				sp.clickAddToCart();
 			
 				Assert.assertEquals(sp.getConformMsg(), true);
+				
 			}
 		}
 		catch(Exception e) {
