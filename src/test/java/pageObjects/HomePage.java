@@ -22,6 +22,10 @@ public class HomePage {
 	
 	@FindBy(xpath="//a[normalize-space()='Login']") WebElement lnkLogin;
 	
+	@FindBy(xpath="//input[@placeholder='Search']") WebElement txtSearch;
+	
+	@FindBy(xpath="//button[@class='btn btn-default btn-lg']") WebElement btnSearch;
+	
 	public void clickMyAccount() {
 		lnkMyAccount.click();
 	}
@@ -33,4 +37,13 @@ public class HomePage {
 	public void clickLogin() {
 		lnkLogin.click();
 	}
+	
+	public void setSearch(String productName) {
+		txtSearch.sendKeys(productName);
+	}
+	
+	public void clickSearchBtn() {
+		btnSearch.click();
+	}
+	
 }
