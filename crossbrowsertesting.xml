@@ -11,6 +11,8 @@
       <class name="testCases.TC01_AccountRegistrationTest"/>
       <class name="testCases.TC02_LoginTest" />
       <class name="testCases.TC03_LoginDDT" />
+      <class name="testCases.TC04_SearchProductTest" /> 
+      <class name="testCases.TC05_AddToCartTest" />
     </classes>
   </test> <!-- Test -->
   
@@ -21,6 +23,8 @@
       <class name="testCases.TC01_AccountRegistrationTest"/>
       <class name="testCases.TC02_LoginTest" />
       <class name="testCases.TC03_LoginDDT" />
+      <class name="testCases.TC04_SearchProductTest" /> 
+      <class name="testCases.TC05_AddToCartTest" />
     </classes>
   </test> <!-- Test -->
   

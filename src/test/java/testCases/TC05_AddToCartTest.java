@@ -22,6 +22,7 @@ public class TC05_AddToCartTest extends BaseClass{
 				sp.selectProducts(prop.getProperty("searchProduct"));
 				sp.setQuantity("3");
 				sp.clickAddToCart();
+				System.out.println("after calling click method of add to cart");
 			
 				Assert.assertEquals(sp.getConformMsg(), true);
 				

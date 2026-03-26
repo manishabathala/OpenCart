@@ -12,7 +12,7 @@ public class SearchPage extends BasePage {
 	
 	public SearchPage(WebDriver driver) {
 		super(driver);
-//		this.driver=driver;
+		this.driver=driver;
 //		PageFactory.initElements(driver, this);
 	}
 	
@@ -52,7 +52,7 @@ public class SearchPage extends BasePage {
 	
 	public void clickAddToCart() {
 		JavascriptExecutor js=(JavascriptExecutor)driver;
-		js.executeScript("arguments[0].click();",btnAddToCart);
+		js.executeScript("arguments[0].click();",btnAddToCart );
 		//btnAddToCart.click();
 	}
 	
