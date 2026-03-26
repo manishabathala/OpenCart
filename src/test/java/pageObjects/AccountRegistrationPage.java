@@ -5,13 +5,14 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AccountRegistrationPage {
+public class AccountRegistrationPage extends BasePage{
 	
-	WebDriver driver;
+	//WebDriver driver;
 	
 	public AccountRegistrationPage(WebDriver driver){
-		this.driver=driver;
-		PageFactory.initElements(driver, this);
+		super(driver);
+//		this.driver=driver;
+//		PageFactory.initElements(driver, this);
 	}
 	
 
