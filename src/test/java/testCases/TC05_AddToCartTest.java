@@ -9,7 +9,7 @@ import testBase.BaseClass;
 
 public class TC05_AddToCartTest extends BaseClass{
 	
-	@Test
+	@Test(groups="Master")
 	public void verify_AddToCart() {
 		try {
 			HomePage hm=new HomePage(driver);

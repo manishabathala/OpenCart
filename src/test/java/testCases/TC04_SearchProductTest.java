@@ -9,7 +9,7 @@ import testBase.BaseClass;
 
 public class TC04_SearchProductTest extends BaseClass{
 	
-	@Test
+	@Test(groups= "Master")
 	public void verify_ProductSearch() throws InterruptedException {
 		HomePage hp=new HomePage(driver);
 		hp.setSearch(prop.getProperty("searchProduct"));
