@@ -19,7 +19,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
 public class BaseClass {
-	public static WebDriver driver;
+	public WebDriver driver;
 	public Properties prop;
 	
 	@BeforeClass(groups= {"Sanity","Regression","Master","DataDriven"})

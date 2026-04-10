@@ -15,26 +15,12 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- testCases.TC02_LoginTest -->
-      <class name="testCases.TC01_AccountRegistrationTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="test_Account_Registration"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- testCases.TC01_AccountRegistrationTest -->
     </classes>
   </test> <!-- edgeTest(failed) -->
   <test thread-count="5" parallel="tests" name="chromeTest(failed)">
     <parameter name="os" value="windows"/>
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC05_AddToCartTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="verify_AddToCart"/>
-        </methods>
-      </class> <!-- testCases.TC05_AddToCartTest -->
       <class name="testCases.TC02_LoginTest">
         <methods>
           <include name="test_Login"/>
@@ -42,20 +28,6 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- testCases.TC02_LoginTest -->
-      <class name="testCases.TC04_SearchProductTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setUp"/>
-          <include name="verify_ProductSearch"/>
-        </methods>
-      </class> <!-- testCases.TC04_SearchProductTest -->
-      <class name="testCases.TC01_AccountRegistrationTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="test_Account_Registration"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- testCases.TC01_AccountRegistrationTest -->
     </classes>
   </test> <!-- chromeTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->

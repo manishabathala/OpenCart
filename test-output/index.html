@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,7 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">18 methods,   18 passed</span>
+                    <span class="method-stats">18 methods, 2 failed,   16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC02_LoginTest" class="method navigator-link" hash-for-method="test_Login">test_Login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC02_LoginTest" class="method navigator-link" hash-for-method="test_Login">test_Login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -113,22 +132,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC02_LoginTest" class="method navigator-link" hash-for-method="test_Login">test_Login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC02_LoginTest" class="method navigator-link" hash-for-method="test_Login">test_Login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC03_LoginDDT" class="method navigator-link" hash-for-method="test_LoginDDT(rtfn@gmail.com, rtfn87, Invalid)">test_LoginDDT(rtfn@gmail.com, rtfn87, Invalid)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC03_LoginDDT" class="method navigator-link" hash-for-method="test_LoginDDT(manisha834@gmail.com, Mani834#, Valid)">test_LoginDDT(manisha834@gmail.com, Mani834#, Valid)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC03_LoginDDT" class="method navigator-link" hash-for-method="test_LoginDDT(phnv654@gmail.com, phnv654, Invalid)">test_LoginDDT(phnv654@gmail.com, phnv654, Invalid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -143,17 +147,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC03_LoginDDT" class="method navigator-link" hash-for-method="test_LoginDDT(phnv654@gmail.com, phnv654, Invalid)">test_LoginDDT(phnv654@gmail.com, phnv654, Invalid)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testCases.TC03_LoginDDT" class="method navigator-link" hash-for-method="test_LoginDDT(xyz876@gmail.com, xyz876, Invalid)">test_LoginDDT(xyz876@gmail.com, xyz876, Invalid)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.TC03_LoginDDT" class="method navigator-link" hash-for-method="test_LoginDDT(rtfn@gmail.com, rtfn87, Invalid)">test_LoginDDT(rtfn@gmail.com, rtfn87, Invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC03_LoginDDT" class="method navigator-link" hash-for-method="test_LoginDDT(manisha834@gmail.com, Mani834#, Valid)">test_LoginDDT(manisha834@gmail.com, Mani834#, Valid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -168,7 +167,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC03_LoginDDT" class="method navigator-link" hash-for-method="test_LoginDDT(xyz876@gmail.com, xyz876, Invalid)">test_LoginDDT(xyz876@gmail.com, xyz876, Invalid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="testCases.TC03_LoginDDT" class="method navigator-link" hash-for-method="test_LoginDDT(manisha834@gmail.com, Mani834#, Valid)">test_LoginDDT(manisha834@gmail.com, Mani834#, Valid)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testCases.TC03_LoginDDT" class="method navigator-link" hash-for-method="test_LoginDDT(rtfn@gmail.com, rtfn87, Invalid)">test_LoginDDT(rtfn@gmail.com, rtfn87, Invalid)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -203,6 +212,46 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TC02_LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_Login">
+                  </a> <!-- test_Login -->
+                  <span class="method-name">test_Login</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testCases.TC02_LoginTest.test_Login(TC02_LoginTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_Login">
+                  </a> <!-- test_Login -->
+                  <span class="method-name">test_Login</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testCases.TC02_LoginTest.test_Login(TC02_LoginTest.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -221,28 +270,6 @@
                   <a name="verify_ProductSearch">
                   </a> <!-- verify_ProductSearch -->
                   <span class="method-name">verify_ProductSearch</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">testCases.TC02_LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="test_Login">
-                  </a> <!-- test_Login -->
-                  <span class="method-name">test_Login</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test_Login">
-                  </a> <!-- test_Login -->
-                  <span class="method-name">test_Login</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -277,18 +304,10 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="test_LoginDDT(rtfn@gmail.com, rtfn87, Invalid)">
-                  </a> <!-- test_LoginDDT(rtfn@gmail.com, rtfn87, Invalid) -->
+                  <a name="test_LoginDDT(phnv654@gmail.com, phnv654, Invalid)">
+                  </a> <!-- test_LoginDDT(phnv654@gmail.com, phnv654, Invalid) -->
                   <span class="method-name">test_LoginDDT</span>
-                  <span class="parameters">(rtfn@gmail.com,rtfn87,Invalid)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test_LoginDDT(manisha834@gmail.com, Mani834#, Valid)">
-                  </a> <!-- test_LoginDDT(manisha834@gmail.com, Mani834#, Valid) -->
-                  <span class="method-name">test_LoginDDT</span>
-                  <span class="parameters">(manisha834@gmail.com,Mani834#,Valid)</span>
+                  <span class="parameters">(phnv654@gmail.com,phnv654,Invalid)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -309,26 +328,18 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="test_LoginDDT(phnv654@gmail.com, phnv654, Invalid)">
-                  </a> <!-- test_LoginDDT(phnv654@gmail.com, phnv654, Invalid) -->
-                  <span class="method-name">test_LoginDDT</span>
-                  <span class="parameters">(phnv654@gmail.com,phnv654,Invalid)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="test_LoginDDT(xyz876@gmail.com, xyz876, Invalid)">
-                  </a> <!-- test_LoginDDT(xyz876@gmail.com, xyz876, Invalid) -->
-                  <span class="method-name">test_LoginDDT</span>
-                  <span class="parameters">(xyz876@gmail.com,xyz876,Invalid)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="test_LoginDDT(rtfn@gmail.com, rtfn87, Invalid)">
                   </a> <!-- test_LoginDDT(rtfn@gmail.com, rtfn87, Invalid) -->
                   <span class="method-name">test_LoginDDT</span>
                   <span class="parameters">(rtfn@gmail.com,rtfn87,Invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_LoginDDT(manisha834@gmail.com, Mani834#, Valid)">
+                  </a> <!-- test_LoginDDT(manisha834@gmail.com, Mani834#, Valid) -->
+                  <span class="method-name">test_LoginDDT</span>
+                  <span class="parameters">(manisha834@gmail.com,Mani834#,Valid)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -349,10 +360,26 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="test_LoginDDT(xyz876@gmail.com, xyz876, Invalid)">
+                  </a> <!-- test_LoginDDT(xyz876@gmail.com, xyz876, Invalid) -->
+                  <span class="method-name">test_LoginDDT</span>
+                  <span class="parameters">(xyz876@gmail.com,xyz876,Invalid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="test_LoginDDT(manisha834@gmail.com, Mani834#, Valid)">
                   </a> <!-- test_LoginDDT(manisha834@gmail.com, Mani834#, Valid) -->
                   <span class="method-name">test_LoginDDT</span>
                   <span class="parameters">(manisha834@gmail.com,Mani834#,Valid)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_LoginDDT(rtfn@gmail.com, rtfn87, Invalid)">
+                  </a> <!-- test_LoginDDT(rtfn@gmail.com, rtfn87, Invalid) -->
+                  <span class="method-name">test_LoginDDT</span>
+                  <span class="parameters">(rtfn@gmail.com,rtfn87,Invalid)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -388,11 +415,11 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;utilities.ExtentReportUtility&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;chromeTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;chromeTest&quot;&gt;
     &lt;parameter name=&quot;os&quot; value=&quot;windows&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
@@ -403,7 +430,7 @@
       &lt;class name=&quot;testCases.TC05_AddToCartTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- chromeTest --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;edgeTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;edgeTest&quot;&gt;
     &lt;parameter name=&quot;os&quot; value=&quot;windows&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
     &lt;classes&gt;
@@ -502,75 +529,75 @@ data.addRows(18);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test_LoginDDT')
 data.setCell(0, 2, 'testCases.TC03_LoginDDT')
-data.setCell(0, 3, 14917);
+data.setCell(0, 3, 13675);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'test_LoginDDT')
-data.setCell(1, 2, 'testCases.TC03_LoginDDT')
-data.setCell(1, 3, 13443);
+data.setCell(1, 1, 'test_Login')
+data.setCell(1, 2, 'testCases.TC02_LoginTest')
+data.setCell(1, 3, 13664);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'test_LoginDDT')
 data.setCell(2, 2, 'testCases.TC03_LoginDDT')
-data.setCell(2, 3, 13072);
+data.setCell(2, 3, 13178);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'test_LoginDDT')
 data.setCell(3, 2, 'testCases.TC03_LoginDDT')
-data.setCell(3, 3, 12814);
+data.setCell(3, 3, 12958);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'test_LoginDDT')
-data.setCell(4, 2, 'testCases.TC03_LoginDDT')
-data.setCell(4, 3, 12479);
+data.setCell(4, 1, 'test_Login')
+data.setCell(4, 2, 'testCases.TC02_LoginTest')
+data.setCell(4, 3, 12784);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'test_LoginDDT')
 data.setCell(5, 2, 'testCases.TC03_LoginDDT')
-data.setCell(5, 3, 12424);
+data.setCell(5, 3, 12717);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'test_LoginDDT')
 data.setCell(6, 2, 'testCases.TC03_LoginDDT')
-data.setCell(6, 3, 11987);
+data.setCell(6, 3, 12706);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'test_LoginDDT')
 data.setCell(7, 2, 'testCases.TC03_LoginDDT')
-data.setCell(7, 3, 11875);
+data.setCell(7, 3, 12703);
 data.setCell(8, 0, 8)
 data.setCell(8, 1, 'test_LoginDDT')
 data.setCell(8, 2, 'testCases.TC03_LoginDDT')
-data.setCell(8, 3, 11644);
+data.setCell(8, 3, 12663);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'test_Account_Registration')
-data.setCell(9, 2, 'testCases.TC01_AccountRegistrationTest')
-data.setCell(9, 3, 4364);
+data.setCell(9, 1, 'test_LoginDDT')
+data.setCell(9, 2, 'testCases.TC03_LoginDDT')
+data.setCell(9, 3, 12577);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'test_Account_Registration')
 data.setCell(10, 2, 'testCases.TC01_AccountRegistrationTest')
-data.setCell(10, 3, 4138);
+data.setCell(10, 3, 7680);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'test_Login')
-data.setCell(11, 2, 'testCases.TC02_LoginTest')
-data.setCell(11, 3, 3582);
+data.setCell(11, 1, 'test_Account_Registration')
+data.setCell(11, 2, 'testCases.TC01_AccountRegistrationTest')
+data.setCell(11, 3, 7551);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'test_LoginDDT')
-data.setCell(12, 2, 'testCases.TC03_LoginDDT')
-data.setCell(12, 3, 3236);
+data.setCell(12, 1, 'verify_AddToCart')
+data.setCell(12, 2, 'testCases.TC05_AddToCartTest')
+data.setCell(12, 3, 6139);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'verify_AddToCart')
 data.setCell(13, 2, 'testCases.TC05_AddToCartTest')
-data.setCell(13, 3, 3072);
+data.setCell(13, 3, 5580);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'verify_AddToCart')
-data.setCell(14, 2, 'testCases.TC05_AddToCartTest')
-data.setCell(14, 3, 3026);
+data.setCell(14, 1, 'test_LoginDDT')
+data.setCell(14, 2, 'testCases.TC03_LoginDDT')
+data.setCell(14, 3, 4386);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'test_Login')
-data.setCell(15, 2, 'testCases.TC02_LoginTest')
-data.setCell(15, 3, 2818);
+data.setCell(15, 1, 'test_LoginDDT')
+data.setCell(15, 2, 'testCases.TC03_LoginDDT')
+data.setCell(15, 3, 4268);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'verify_ProductSearch')
 data.setCell(16, 2, 'testCases.TC04_SearchProductTest')
-data.setCell(16, 3, 1267);
+data.setCell(16, 3, 2992);
 data.setCell(17, 0, 17)
 data.setCell(17, 1, 'verify_ProductSearch')
 data.setCell(17, 2, 'testCases.TC04_SearchProductTest')
-data.setCell(17, 3, 1186);
+data.setCell(17, 3, 2928);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -606,180 +633,169 @@ return data;
                 <span class="method-name">setUp(windows, chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(windows, edge)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">test_Account_Registration</span>
-                <span class="method-start">9169 ms</span>
+                <span class="method-start">11094 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_Account_Registration</span>
+                <span class="method-start">11223 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13616 ms</span>
+                <span class="method-start">18840 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">18840 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC02_LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(windows, chrome)</span>
-                <span class="method-start">15215 ms</span>
+                <span class="method-start">20100 ms</span>
               </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">test_Login</span>
-                <span class="method-start">21228 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">24820 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.TC03_LoginDDT</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp(windows, chrome)</span>
-                <span class="method-start">26043 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">test_LoginDDT(manisha834@gmail.com, Mani834#, Valid)</span>
-                <span class="method-start">37211 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">test_LoginDDT(xyz876@gmail.com, xyz876, Invalid)</span>
-                <span class="method-start">40458 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">test_LoginDDT(phnv654@gmail.com, phnv654, Invalid)</span>
-                <span class="method-start">52902 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">test_LoginDDT(rtfn@gmail.com, rtfn87, Invalid)</span>
-                <span class="method-start">64893 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">test_LoginDDT(piutfg@gmail, puyt56, Invalid)</span>
-                <span class="method-start">79810 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">91692 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.TC04_SearchProductTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp(windows, chrome)</span>
-                <span class="method-start">93344 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">verify_ProductSearch</span>
-                <span class="method-start">101281 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">102555 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.TC05_AddToCartTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp(windows, chrome)</span>
-                <span class="method-start">103628 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">verify_AddToCart</span>
-                <span class="method-start">111784 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">114816 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.TC01_AccountRegistrationTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(windows, edge)</span>
-                <span class="method-start">116845 ms</span>
+                <span class="method-start">20297 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">test_Account_Registration</span>
-                <span class="method-start">124885 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">129028 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testCases.TC02_LoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setUp(windows, edge)</span>
-                <span class="method-start">130524 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">test_Login</span>
-                <span class="method-start">138300 ms</span>
+                <span class="method-start">30224 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">test_Login</span>
+                <span class="method-start">31104 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">141122 ms</span>
+                <span class="method-start">43908 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">43910 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC03_LoginDDT</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(windows, edge)</span>
-                <span class="method-start">142419 ms</span>
+                <span class="method-start">45538 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(windows, chrome)</span>
+                <span class="method-start">46945 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">test_LoginDDT(manisha834@gmail.com, Mani834#, Valid)</span>
-                <span class="method-start">151295 ms</span>
+                <span class="method-start">60314 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_LoginDDT(manisha834@gmail.com, Mani834#, Valid)</span>
+                <span class="method-start">60314 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_LoginDDT(xyz876@gmail.com, xyz876, Invalid)</span>
-                <span class="method-start">162949 ms</span>
+                <span class="method-start">64598 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_LoginDDT(xyz876@gmail.com, xyz876, Invalid)</span>
+                <span class="method-start">64700 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_LoginDDT(phnv654@gmail.com, phnv654, Invalid)</span>
-                <span class="method-start">176400 ms</span>
+                <span class="method-start">77179 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_LoginDDT(phnv654@gmail.com, phnv654, Invalid)</span>
+                <span class="method-start">77422 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_LoginDDT(rtfn@gmail.com, rtfn87, Invalid)</span>
-                <span class="method-start">189232 ms</span>
+                <span class="method-start">89882 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_LoginDDT(rtfn@gmail.com, rtfn87, Invalid)</span>
+                <span class="method-start">90089 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_LoginDDT(piutfg@gmail, puyt56, Invalid)</span>
-                <span class="method-start">202304 ms</span>
+                <span class="method-start">102801 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">test_LoginDDT(piutfg@gmail, puyt56, Invalid)</span>
+                <span class="method-start">102853 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">214787 ms</span>
+                <span class="method-start">116037 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">116481 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC04_SearchProductTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <span class="method-name">setUp(windows, chrome)</span>
+                <span class="method-start">118557 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
                 <span class="method-name">setUp(windows, edge)</span>
-                <span class="method-start">216409 ms</span>
+                <span class="method-start">118583 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verify_ProductSearch</span>
-                <span class="method-start">223995 ms</span>
+                <span class="method-start">128332 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_ProductSearch</span>
+                <span class="method-start">129399 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">225184 ms</span>
+                <span class="method-start">131328 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">132331 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC05_AddToCartTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp(windows, edge)</span>
-                <span class="method-start">226130 ms</span>
+                <span class="method-start">132832 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(windows, chrome)</span>
+                <span class="method-start">133866 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verify_AddToCart</span>
-                <span class="method-start">234096 ms</span>
+                <span class="method-start">144576 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verify_AddToCart</span>
+                <span class="method-start">145157 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">237171 ms</span>
+                <span class="method-start">150722 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">150744 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
