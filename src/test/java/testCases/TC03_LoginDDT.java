@@ -23,7 +23,7 @@ public class TC03_LoginDDT extends BaseClass{
 			lp.clickLogin();
 			
 			MyAccountPage MyAcc=new MyAccountPage(driver);
-			boolean msg=MyAcc.isMyAccountOageExist();
+			boolean msg=MyAcc.isMyAccountPageExist();
 			
 			if(expResult.equalsIgnoreCase("Valid")) {
 				if(msg==true) {
